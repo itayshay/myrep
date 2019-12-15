@@ -1,1 +1,1 @@
-cat ..\\mypipe\\jobName
+type ..\\mypipe\\jobName
