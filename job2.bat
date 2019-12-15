@@ -1,1 +1,1 @@
-type ..\\job1\\jobName
+type ..\\job1\\myrep\\jobName
