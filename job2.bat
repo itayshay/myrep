@@ -1,1 +1,1 @@
-type ..\\mypipe\\jobName
+type ..\\job1\\jobName
