@@ -13,15 +13,23 @@ pipeline {
         stage('stage-2') {
           steps {
             echo 'stage2'
+            sleep 2
           }
         }
 
-        stage('') {
+        stage('sleep 10') {
           steps {
             sleep 10
           }
         }
 
+      }
+    }
+
+    stage('deploy') {
+      steps {
+        echo 'deploying'
+        build 'job_deploy'
       }
     }
 
