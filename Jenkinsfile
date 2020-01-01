@@ -21,6 +21,10 @@ pipeline {
         stage('sleep 10') {
           steps {
             sleep 10
+            timeout(time: 10) {
+              echo 'executing performance tests'
+            }
+
           }
         }
 
