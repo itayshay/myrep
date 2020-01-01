@@ -14,7 +14,7 @@ pipeline {
           steps {
             echo 'stage2'
             sleep 2
-            junit 'target/**/*.xml'
+            junit 'target/junitTests.xml'
           }
         }
 
