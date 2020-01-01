@@ -9,8 +9,19 @@ pipeline {
     }
 
     stage('stage-2') {
-      steps {
-        echo 'stage2'
+      parallel {
+        stage('stage-2') {
+          steps {
+            echo 'stage2'
+          }
+        }
+
+        stage('') {
+          steps {
+            sleep 10
+          }
+        }
+
       }
     }
 
