@@ -10,10 +10,11 @@ pipeline {
 
     stage('stage-2') {
       parallel {
-        stage('stage-2') {
+        stage('test') {
           steps {
             echo 'stage2'
             sleep 2
+            junit 'target/**/*.xml'
           }
         }
 
